@@ -6,18 +6,18 @@
     <title>Nova Senha</title>
 </head>
 <body>
-    <p>Bem-vindo (a)</p>
-    <p>Que bom ter você aqui!</p>
-    <p>Acesse sua conta para continuar aprendendo, ensinando e eveluindo juntos.</p>
-    <img src="assets/images/logo.png">
-    <p>Crie sua Senha</p>
-        <P><label for="email">E-mail</label></P>
+    <form  method="get" action="index.html">
+        <p>Bem-vindo (a)</p>
+        <p>Que bom ter você aqui!</p>
+        <p>Acesse sua conta para continuar aprendendo, ensinando e eveluindo juntos.</p>
+        <img src="assets/images/logo.png">
+        <p>Criar sua nova senha</p>
+        <p><label for="email">E-mail</label></p>
         <input type="email" name="email" id="email" placeholder="Digite o E-mail" required>
-
         <p><label for="senha">Digite sua nova senha</label></p>
-        <input type="password" name="senha" id="senha" placeholder="Digite a Senha" required="8">
+        <input type="password" name="senha" id="senha" placeholder="Digite a Senha" required minlength=8>
         <p><label for="senha">Confirme sua nova senha</label></p>
-        <input type="password" name="senha" id="senha" placeholder="Digite a Senha" required="8">
-        <p><a href="index.html"> <button>Criar </button></a></p>
+        <input type="password" name="senha" id="senha" placeholder="Digite a Senha" required minlength=8>
+        <p><button type="submit">Criar</button></p>
 </body>
 </html>
