@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,37 +7,32 @@
     <link rel="stylesheet" href="assets/css/style.css"> 
 </head>
 <body>
-    <form method="get" action="dashboard.html">
-        <p>Bem-vindo (a)</p>
+
+    <p>Bem-vindo (a)</p>
     <p>Que bom ter você aqui!</p>
     <p>Acesse sua conta para continuar aprendendo, ensinando e eveluindo juntos.</p>
-    
-        <img src="assets/images/logo.png">
+    <img src="assets/images/logo.png" alt="">
+
+    <form method="get" action="dashboard.html">
         <p>Acesse sua Conta</p>
         <P><label for="email">E-mail:</label></P>
         <input type="email" name="email" id="email" placeholder="Digite o E-mail" required>
-
         <p><label for="senha">Senha:</label></p>
-        <input type="password" name="senha" id="senha" placeholder="Digite a Senha" required="8">
-
+        <input type="password" name="senha" id="senha" placeholder="Digite a Senha" required minlength="8">
         <p><a href="senha.html">Esqueceu a Senha? </a></p>
-
-        
-        <p><label for="nivel">Nível de Acesso</label><br></p>
-    <select name="nivel" id="nivel" required>
-        <option value="">Selecione um nível</option>
-        <option value="bronze">Bronze</option>
-        <option value="prata">Prata</option>
-        <option value="ouro">Ouro</option>
-    </select>
-    
-    
-        <input type="checkbox" id="termos" name="termos" required>
-        <label for="termos">Aceito os Termos de Uso</label>
-    </p>
-    <p> <button type="submit">Entrar</button></p>
+        <p> <button type="submit">Entrar</button></p>
+        ou
     </form>
-    <p><a href="cadastro.html"> <button>Criar Conta</button></a></p>
-    <p>Este ambiente é acessivel para todos. Se precisar de ajuda, <a href="#ajuda">clique aqui</a></p>
+
+    <form method="get" action="cadastro.html">
+        <p><button type="submit">Criar nova conta</button></p>
+    </form>
+
+    <p><button>Audio</button></p>
+
+    <footer>
+        <p>Este ambiente é acessivel para todos. Se precisar de ajuda, <a href="#ajuda">clique aqui</a></p>
+    </footer>
+   
 </body>
 </html>
