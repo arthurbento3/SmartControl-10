@@ -1,0 +1,200 @@
+:root {
+    --bg-fundo: #dbeeff;          
+    --bg-card: #ffffff;        
+    --primary-blue: #002b66;    
+    --secondary-blue: #2a61b3;    
+    --border-color: #cccccc;    
+    --shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+body {
+    background-color: var(--bg-fundo);
+    min-height: 100vh;
+    position: relative;
+    padding: 100px;
+}
+
+body > p:nth-of-type(1) {
+    font-size: 2.6rem;
+    font-weight: 1000;
+    color: var(--primary-blue);
+    margin-top: 200px;
+    margin-left: 5%;
+}
+
+body > p:nth-of-type(2) {
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: var(--secondary-blue);
+    margin-top: 10px;
+    margin-left: 5%;
+    margin-bottom: 25px;
+}
+
+body > p:nth-of-type(3) {
+    font-size: 1rem;
+    color: var(--primary-blue);
+    max-width: 300px;
+    line-height: 1.5;
+    margin-left: 5%;
+}
+
+body > img {
+    
+    position: absolute;
+    top: 130px;
+    right: 15%;
+    max-width: 120px;
+    height: auto;
+    z-index:10
+}
+form:first-of-type {
+    background-color: var(--bg-card);
+    width: 400px;
+    position: absolute;
+    top: 130px;
+    right: 12%;
+    padding: 30px 35px 15px 35px;
+    border-radius: 16px 16px 0 0;
+    box-shadow: var(--shadow);
+    text-align: center;
+}
+form:first-of-type > p:first-child {
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: var(--primary-blue);
+    text-align: left;
+    margin-bottom: 15px;
+}
+label {
+    display: block;
+    text-align: left;
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: var(--primary-blue);
+    margin-top: 12px;
+    margin-bottom: 5px;
+}
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    font-size: 0.95rem;
+    outline: none;
+    transition: transform 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+input[type="email"]:hover,
+input[type="password"]:hover,
+input[type="email"]:focus,
+input[type="password"]:focus {
+    transform: scale(1.02);
+    border-color: var(--secondary-blue);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+form:first-of-type a {
+    display: block;
+    text-align: right;
+    color: var(--secondary-blue);
+    font-size: 0.85rem;
+    text-decoration: none;
+    margin-top: 8px;
+    margin-bottom: 20px;
+}
+
+form:first-of-type a:hover {
+    text-decoration: underline;
+}
+form:first-of-type button[type="submit"] {
+    width: 100%;
+    padding: 12px;
+    background-color: var(--primary-blue);
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 700;
+    cursor: pointer;
+    margin-bottom: 15px;
+    transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+form:first-of-type button[type="submit"]:hover {
+    transform: scale(1.02);
+    background-color: #001f4d;
+}
+form:nth-of-type(2) {
+    background-color: var(--bg-card);
+    width: 400px;
+    position: absolute;
+    top: 480px; 
+    right: 12%;
+    padding: 0 35px 30px 35px;
+    border-radius: 0 0 16px 16px;
+    box-shadow: var(--shadow);
+}
+form:nth-of-type(2) button[type="submit"] {
+    width: 100%;
+    padding: 12px;
+    background-color: transparent;
+    color: var(--secondary-blue);
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    font-size: 0.95rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: transform 0.2s ease, border-color 0.2s ease, background-color 0.2s ease;
+}
+
+form:nth-of-type(2) button[type="submit"]:hover {
+    transform: scale(1.02);
+    border-color: var(--secondary-blue);
+    background-color: #f4f8ff;
+}
+body > p:last-of-type button {
+    position: fixed;
+    right: 30px;
+    bottom: 60px;
+    padding: 10px 18px;
+    background-color: #00a2ff;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    transition: transform 0.2s ease;
+}
+
+body > p:last-of-type button:hover {
+    transform: scale(1.08);
+}
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 12px 5%;
+    font-size: 0.85rem;
+    color: var(--primary-blue);
+    background-color: rgba(219, 238, 255, 0.9);
+}
+
+footer a {
+    color: var(--secondary-blue);
+    font-weight: bold;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
