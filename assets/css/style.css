@@ -101,7 +101,6 @@ form input[type="email"],form input[type="password"] {
     border: 1px solid var(--borda);
     border-radius: 10px;
     margin-bottom: 15px;
-    transition: transform 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
 }
 
 
@@ -120,14 +119,8 @@ form button[type="submit"] {
     border-radius: 10px;
     font-size: 1rem;
     margin-bottom: 10px;
-    transition: transform 0.2s ease, background-color 0.2s ease, box-shadow 0.2s ease;
-    
+   
 }
-
-form button[type="submit"]:hover {
-    transform: scale(1.03);  
-}
-
 
 form[action="cadastro.html"] {
     margin-top: 10px;
@@ -141,11 +134,6 @@ form[action="cadastro.html"] button[type="submit"] {
     border-radius: 10px;
     padding: 12px;
     font-size: 0.95rem;
-    transition: transform 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
-}
-
-form[action="cadastro.html"] button[type="submit"]:hover {
-    transform: scale(1.03); 
 }
 
 
