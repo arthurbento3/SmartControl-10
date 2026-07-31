@@ -7,29 +7,32 @@
     <link rel="stylesheet" href="assets/css/style.css"> 
 </head>
 <body>
+    <header>
+        <p>Bem-vindo (a)</p>
+        <p>Que bom ter você aqui!</p>
+        <p>Acesse sua conta para continuar aprendendo, ensinando e eveluindo juntos.</p>
+    </header>
+    
+    <main>
+        <img src="assets/images/logo.png" alt="">
+        <form method="get" action="dashboard.html">
+            <p>Acesse sua Conta</p>
+            <P><label for="email">E-mail:</label></P>
+            <input type="email" name="email" id="email" placeholder="Digite o E-mail" required>
+            <p><label for="senha">Senha:</label></p>
+            <input type="password" name="senha" id="senha" placeholder="Digite a Senha" required minlength="8">
+            <p><a href="senha.html">Esqueceu a Senha? </a></p>
+            <p> <button type="submit">Entrar</button></p>
+            ou
+        </form>
 
-    <p>Bem-vindo (a)</p>
-    <p>Que bom ter você aqui!</p>
-    <p>Acesse sua conta para continuar aprendendo, ensinando e eveluindo juntos.</p>
-    <img src="assets/images/logo.png" alt="">
+        <form method="get" action="cadastro.html">
+            <p><button type="submit">Criar nova conta</button></p>
+        </form>
 
-    <form method="get" action="dashboard.html">
-        <p>Acesse sua Conta</p>
-        <P><label for="email">E-mail:</label></P>
-        <input type="email" name="email" id="email" placeholder="Digite o E-mail" required>
-        <p><label for="senha">Senha:</label></p>
-        <input type="password" name="senha" id="senha" placeholder="Digite a Senha" required minlength="8">
-        <p><a href="senha.html">Esqueceu a Senha? </a></p>
-        <p> <button type="submit">Entrar</button></p>
-        ou
-    </form>
-
-    <form method="get" action="cadastro.html">
-        <p><button type="submit">Criar nova conta</button></p>
-    </form>
-
-    <p><button>Audio</button></p>
-
+        <p><button>Audio</button></p>
+    </main>
+    
     <footer>
         <p>Este ambiente é acessivel para todos. Se precisar de ajuda, <a href="#ajuda">clique aqui</a></p>
     </footer>
