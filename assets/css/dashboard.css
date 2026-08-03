@@ -1,20 +1,16 @@
-*{  margin: 0;
+*{
+    margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 :root {
-    --fundo: #dbeeff;                    
-    --titulo: #0a3c72;       
-    --subtitulo: #335384;     
-    --texto: #64748b;        
-    --borda: #cbd5e1;     
-    --borda2: #003366;      
-    --botao-principal: #002b66;    
-    --botao: #001f4d;  
-    --botao-texto: #003366; 
-    --link: #4a779d;         
-    --sombra: rgba(0, 0, 0, 0.05); 
+    --fundo: #dbeeff;                  
+    --fundo2: #002b66;
+    --fundo-menu: #ffffff;
+    --titulo: #4a80db;       
+    --texto: #1e293b;        
+    --sombra: rgba(0, 0, 0, 0.08); 
 }
 
