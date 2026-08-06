@@ -169,3 +169,37 @@ footer a {
 footer a:hover {
     text-decoration: underline;
 }
+@media (max-width: 768px) {
+    body {
+        flex-direction: column; /* Empilha o cabeçalho e a área principal */
+    }
+
+    header {
+        width: 100%;
+        padding: 30px 20px;
+        align-items: center;
+        text-align: center;
+    }
+
+    header p:nth-child(3) {
+        max-width: 100%;
+    }
+
+    main {
+        width: 100%;
+        padding: 30px 20px;
+    }
+
+    footer {
+        position: static; /* Remove a posição absoluta para não encavalar nos campos */
+        text-align: center;
+        margin: 20px auto;
+        left: auto;
+    }
+
+    main > p button {
+        position: fixed; /* Mantém o botão de acessibilidade fixo no canto da tela */
+        right: 15px;
+        bottom: 15px;
+    }
+}
