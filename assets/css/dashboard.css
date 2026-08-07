@@ -441,7 +441,7 @@ main {
   main p:nth-of-type(7) { order: 11; margin-bottom: 20px; }
 
   footer {
-    margin-left: 0;
+    margin-left:  0; 
     padding: 20px 15px;
   }
 }
